@@ -1,14 +1,19 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
+import Link from "next/link";
 
 export const Header = () => {
   return (
-    <header className="relative">
-      <Image
-        alt="apple-logo.png"
-        src="http://rb.gy/vsvv2o"
-        width="10"
-        height="10"
-      />
+    <header>
+      <Link href="/">
+        <div className="z-20 cursor-pointer">
+          <Image
+            alt="apple-logo.png"
+            src="http://rb.gy/vsvv2o"
+            width="20"
+            height="20"
+          />
+        </div>
+      </Link>
     </header>
   );
 };
